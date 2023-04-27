@@ -1,26 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <MenuCatalogs />
+    <CardsCatalog />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MenuCatalogs from './components/MenuCatalogs.vue';
+import CardsCatalog from './components/CardsCatalog.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    CardsCatalog,
+    MenuCatalogs,
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

@@ -1,0 +1,18 @@
+@tablet-size:              768px;
+@desktop-size:             1280px;
+@desktop-large-size:       1600px;
+
+@to-tablet-size:           767px;
+@to-desktop-size:          1279px;
+@to-desktop-large-size:    1599px;
+
+@tablet:        ~'only screen and (min-width: @{tablet-size})';
+@desktop:       ~'only screen and (min-width: @{desktop-size})';
+@desktop-large: ~'only screen and (min-width: @{desktop-large-size})';
+
+@phone-max:     ~'only screen and (max-width: @{to-tablet-size})';
+@tablet-max:    ~'only screen and (max-width: @{to-desktop-size})';
+@desktop-max:   ~'only screen and (max-width: @{to-desktop-large-size})';
+
+@tablet-only:   ~'(min-width: @{tablet-size}) and (max-width: @{to-desktop-size})';
+@desktop-only:  ~'(min-width: @{desktop-size}) and (max-width: @{to-desktop-large-size})';
