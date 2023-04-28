@@ -3,7 +3,7 @@
     <h2 class="menu-catalogs__title">Меню каталогов</h2>
 
     <div class="menu-catalogs__settings">
-      
+      <BaseSvg name="settings" />
     </div>
     <div class="menu-catalogs__container">
 
@@ -12,13 +12,12 @@
 </template>
 
 <script>
-  export default {
-    name: 'MenuCatalog',
-  };
-</script>
+import BaseSvg from './common/BaseSvg.vue';
 
-<style lang="less" scoped>
-.menu-catalogs {
-  
-}
-</style>
+export default {
+  name: 'MenuCatalog',
+  components: {
+    BaseSvg,
+  },
+};
+</script>
