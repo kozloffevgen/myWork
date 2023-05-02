@@ -1,3 +1,44 @@
 :root {
+  /*
+    @ colors-text
+  */
   --main-color: #1a1818;
+  --color-text-default: #fff;
+
+  /*
+    @ border
+  */
+  --border-color: #b6b6b6;
+  --border-color-active: #019fff;
+  --border-radius: 8px;
+
+  /*
+    @ colors-bg
+  */
+  --color-bg-button: #0400ff;
+  --color-bg-button-hover: #2a2956;
+}
+
+body,
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 20px 0 12px;
+}
+
+body {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
 }

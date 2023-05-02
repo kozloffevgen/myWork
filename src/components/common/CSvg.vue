@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'svg-icon',
+  name: 'CSvg',
   props: {
     name: {
       type: String,
@@ -27,7 +27,7 @@ export default {
       return icon.url;
     },
     className() {
-      return 'svg-icon svg-icon--' + this.name;
+      return `svg-icon svg-icon__${this.name}`;
     }
   }
 };
