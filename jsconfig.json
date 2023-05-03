@@ -5,6 +5,9 @@
     "baseUrl": "./",
     "moduleResolution": "node",
     "paths": {
+      "Assets*": [
+        "src/*"
+      ],
       "@/*": [
         "src/*"
       ]

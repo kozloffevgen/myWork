@@ -26,7 +26,8 @@ export default {
 
 <style lang="less" scoped>
 .common-input {
-  max-width: var(---max-width-input, 200px);
+  width: 100%;
+  max-width: var(--max-width-input, 200px);
   padding-top: 12px;
   padding-bottom: 12px;
   padding-inline: var(--padding-inline-input, 10px);
@@ -42,6 +43,7 @@ export default {
   }
 
   &__container {
+    width: 1005;
     position: relative;
     display: flex;
     align-items: center;
